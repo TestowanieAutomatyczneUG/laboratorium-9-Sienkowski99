@@ -31,7 +31,7 @@ class CarTest(unittest.TestCase):
         car.driveTo = Mock(name='driveTo')
         car.driveTo.return_value = 'Rotmanka'
 
-        self.assertEqual(car.driveTo('Rotmanka'), 'dawaj dawaj dawaj')
+        self.assertEqual(car.driveTo('Rotmanka'), 'Rotmanka')
 
 if __name__ == '__main__':
     unittest.main()
